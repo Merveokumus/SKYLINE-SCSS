@@ -26,6 +26,7 @@ header {
     align-items: center;
     padding: 20px 40px;
     a {
+      white-space: nowrap;
       text-decoration: none;
       color: $text-color;
       padding: 0 10px;
@@ -46,6 +47,7 @@ header {
       border-right: 1px solid;
       font-size: 15px;
       font-weight: 600;
+      padding: 0 10px;
     }
   }
   #nav-right {
@@ -59,7 +61,7 @@ header {
 // KARŞILAMA ALANI
 
 .hero {
-  padding: 50px;
+  padding: 100px;
   background: linear-gradient(rgb(215, 215, 215) 40%, $background 40%);
   display: flex;
   justify-content: space-between;
@@ -177,6 +179,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px 100px;
+    gap: 50px;
     @include tablet {
       gap:30px
     }
@@ -192,7 +195,7 @@ header {
       align-items: center;
       justify-content: space-between;
       @include tablet {
-        width: 30px;
+        width: 300px;
       }
       
       img {
